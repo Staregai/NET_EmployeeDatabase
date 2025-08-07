@@ -9,8 +9,12 @@ namespace NET_EmployeeDatabase.Domain.Services
 
         public int CountFreeDays(Employee employee)
         {
-            if (employee == null || employee.VacationPackage == null)
+            if (employee == null)
                 throw new ArgumentNullException(nameof(employee));
+            if (employee.VacationPackage == null)
+                throw new ArgumentNullException(nameof(employee.VacationPackage));
+            if (employee.Vacations == null)
+                throw new ArgumentNullException(nameof(employee.Vacations));
 
             int usedDays = employee.Vacations
                 .Where(v => v.DateUntil < _today)
@@ -21,7 +25,14 @@ namespace NET_EmployeeDatabase.Domain.Services
 
         public bool CanRequestVacation(Employee employee)
         {
-            return CountFreeDays(employee) > 0;
+            try
+            {
+                return CountFreeDays(employee) > 0;
+            }
+            catch
+            {
+                return false;
+            }
         }
     }
 }

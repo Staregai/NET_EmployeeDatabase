@@ -6,10 +6,6 @@
       "AbsoluteMoniker": "D:0:0:{94BF38A9-4A91-4B1C-AE3D-D0F08A396CDC}|..\\Tests\\Tests.csproj|c:\\users\\2002g\\desktop\\laby\\recruitment_project\\tests\\vacationservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2AC957C-DD60-414C-9FEE-DA0E7A58E30C}|NET_EmployeeDatabase.csproj|c:\\users\\2002g\\desktop\\laby\\recruitment_project\\net_employeedatabase\\domain\\interfaces\\iemployeestructureservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2AC957C-DD60-414C-9FEE-DA0E7A58E30C}|NET_EmployeeDatabase.csproj|solutionrelative:domain\\interfaces\\iemployeestructureservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E2AC957C-DD60-414C-9FEE-DA0E7A58E30C}|NET_EmployeeDatabase.csproj|c:\\users\\2002g\\desktop\\laby\\recruitment_project\\net_employeedatabase\\domain\\interfaces\\ivacationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E2AC957C-DD60-414C-9FEE-DA0E7A58E30C}|NET_EmployeeDatabase.csproj|solutionrelative:domain\\interfaces\\ivacationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -20,6 +16,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{E2AC957C-DD60-414C-9FEE-DA0E7A58E30C}|NET_EmployeeDatabase.csproj|c:\\users\\2002g\\desktop\\laby\\recruitment_project\\net_employeedatabase\\domain\\services\\vacationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E2AC957C-DD60-414C-9FEE-DA0E7A58E30C}|NET_EmployeeDatabase.csproj|solutionrelative:domain\\services\\vacationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2AC957C-DD60-414C-9FEE-DA0E7A58E30C}|NET_EmployeeDatabase.csproj|c:\\users\\2002g\\desktop\\laby\\recruitment_project\\net_employeedatabase\\domain\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2AC957C-DD60-414C-9FEE-DA0E7A58E30C}|NET_EmployeeDatabase.csproj|solutionrelative:domain\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2AC957C-DD60-414C-9FEE-DA0E7A58E30C}|NET_EmployeeDatabase.csproj|c:\\users\\2002g\\desktop\\laby\\recruitment_project\\net_employeedatabase\\domain\\interfaces\\iemployeestructureservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2AC957C-DD60-414C-9FEE-DA0E7A58E30C}|NET_EmployeeDatabase.csproj|solutionrelative:domain\\interfaces\\iemployeestructureservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -29,50 +33,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "VacationServiceTests.cs",
-              "DocumentMoniker": "C:\\Users\\2002g\\Desktop\\laby\\recruitment_project\\Tests\\VacationServiceTests.cs",
-              "RelativeDocumentMoniker": "..\\Tests\\VacationServiceTests.cs",
-              "ToolTip": "C:\\Users\\2002g\\Desktop\\laby\\recruitment_project\\Tests\\VacationServiceTests.cs",
-              "RelativeToolTip": "..\\Tests\\VacationServiceTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T10:36:06.268Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "VacationService.cs",
               "DocumentMoniker": "C:\\Users\\2002g\\Desktop\\laby\\recruitment_project\\NET_EmployeeDatabase\\Domain\\Services\\VacationService.cs",
               "RelativeDocumentMoniker": "Domain\\Services\\VacationService.cs",
               "ToolTip": "C:\\Users\\2002g\\Desktop\\laby\\recruitment_project\\NET_EmployeeDatabase\\Domain\\Services\\VacationService.cs",
               "RelativeToolTip": "Domain\\Services\\VacationService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAjwAUAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-07T10:35:04.457Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "EmployeeStructureService.cs",
               "DocumentMoniker": "C:\\Users\\2002g\\Desktop\\laby\\recruitment_project\\NET_EmployeeDatabase\\Domain\\Services\\EmployeeStructureService.cs",
               "RelativeDocumentMoniker": "Domain\\Services\\EmployeeStructureService.cs",
               "ToolTip": "C:\\Users\\2002g\\Desktop\\laby\\recruitment_project\\NET_EmployeeDatabase\\Domain\\Services\\EmployeeStructureService.cs",
               "RelativeToolTip": "Domain\\Services\\EmployeeStructureService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAAjwAcAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-07T10:34:45.648Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "IVacationService.cs",
               "DocumentMoniker": "C:\\Users\\2002g\\Desktop\\laby\\recruitment_project\\NET_EmployeeDatabase\\Domain\\Interfaces\\IVacationService.cs",
               "RelativeDocumentMoniker": "Domain\\Interfaces\\IVacationService.cs",
@@ -85,7 +76,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "VacationServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\2002g\\Desktop\\laby\\recruitment_project\\Tests\\VacationServiceTests.cs",
+              "RelativeDocumentMoniker": "..\\Tests\\VacationServiceTests.cs",
+              "ToolTip": "C:\\Users\\2002g\\Desktop\\laby\\recruitment_project\\Tests\\VacationServiceTests.cs",
+              "RelativeToolTip": "..\\Tests\\VacationServiceTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T10:36:06.268Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\2002g\\Desktop\\laby\\recruitment_project\\NET_EmployeeDatabase\\Domain\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\Employee.cs",
+              "ToolTip": "C:\\Users\\2002g\\Desktop\\laby\\recruitment_project\\NET_EmployeeDatabase\\Domain\\Models\\Employee.cs",
+              "RelativeToolTip": "Domain\\Models\\Employee.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAADwvxMAAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T10:40:28.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "IEmployeeStructureService.cs",
               "DocumentMoniker": "C:\\Users\\2002g\\Desktop\\laby\\recruitment_project\\NET_EmployeeDatabase\\Domain\\Interfaces\\IEmployeeStructureService.cs",
               "RelativeDocumentMoniker": "Domain\\Interfaces\\IEmployeeStructureService.cs",

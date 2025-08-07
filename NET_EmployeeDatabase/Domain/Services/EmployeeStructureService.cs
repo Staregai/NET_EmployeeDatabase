@@ -9,11 +9,17 @@ namespace NET_EmployeeDatabase.Domain.Services
 
         public List<EmployeeStructure> BuildStructure(List<Employee> employees)
         {
+            if (employees == null)
+                throw new ArgumentNullException(nameof(employees));
+
             var structure = new List<EmployeeStructure>();
             var lookup = employees.ToDictionary(e => e.Id);
 
             foreach (var emp in employees)
             {
+                if (emp == null)
+                    throw new ArgumentException("Employee list contains null element.", nameof(employees));
+
                 int rank = 1;
                 var current = emp;
                 while (current.SuperiorId.HasValue && lookup.ContainsKey(current.SuperiorId.Value))
@@ -35,7 +41,10 @@ namespace NET_EmployeeDatabase.Domain.Services
 
         public int? GetSuperiorRank(int employeeId, int superiorId)
         {
-            return _structure?
+            if (_structure == null)
+                throw new InvalidOperationException("Structure has not been built yet.");
+
+            return _structure
                 .FirstOrDefault(s => s.EmployeeId == employeeId && s.SuperiorId == superiorId)
                 ?.Rank;
         }
