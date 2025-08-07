@@ -1,5 +1,8 @@
-public class Team
+namespace NET_EmployeeDatabase.Domain.Models
 {
-    public int Id { get; set; }
-    public string Name { get; set; }
+    public class Team
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+    }
 }

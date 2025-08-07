@@ -1,6 +1,9 @@
-public class EmployeeStructure
+namespace NET_EmployeeDatabase.Domain.Models
 {
-    public int EmployeeId { get; set; }
-    public int SuperiorId { get; set; }
-    public int Rank { get; set; }
+    public class EmployeeStructure
+    {
+        public int EmployeeId { get; set; }
+        public int SuperiorId { get; set; }
+        public int Rank { get; set; }
+    }
 }

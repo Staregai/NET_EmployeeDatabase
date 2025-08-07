@@ -1,21 +1,27 @@
-public class VacationService : IVacationService
+using NET_EmployeeDatabase.Domain.Interfaces;
+using NET_EmployeeDatabase.Domain.Models;
+
+namespace NET_EmployeeDatabase.Domain.Services
 {
-    private readonly DateTime _today = DateTime.Today;
-
-    public int CountFreeDays(Employee employee)
+    public class VacationService : IVacationService
     {
-        if (employee == null || employee.VacationPackage == null)
-            throw new ArgumentNullException(nameof(employee));
+        private readonly DateTime _today = DateTime.Today;
 
-        int usedDays = employee.Vacations
-            .Where(v => v.DateUntil < _today)
-            .Sum(v => (v.DateUntil - v.DateSince).Days + 1);
+        public int CountFreeDays(Employee employee)
+        {
+            if (employee == null || employee.VacationPackage == null)
+                throw new ArgumentNullException(nameof(employee));
 
-        return Math.Max(0, employee.VacationPackage.GrantedDays - usedDays);
-    }
+            int usedDays = employee.Vacations
+                .Where(v => v.DateUntil < _today)
+                .Sum(v => (v.DateUntil - v.DateSince).Days + 1);
 
-    public bool CanRequestVacation(Employee employee)
-    {
-        return CountFreeDays(employee) > 0;
+            return Math.Max(0, employee.VacationPackage.GrantedDays - usedDays);
+        }
+
+        public bool CanRequestVacation(Employee employee)
+        {
+            return CountFreeDays(employee) > 0;
+        }
     }
 }

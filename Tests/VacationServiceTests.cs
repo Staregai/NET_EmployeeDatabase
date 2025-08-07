@@ -1,46 +1,53 @@
+
+using NET_EmployeeDatabase.Domain.Models;
+using NET_EmployeeDatabase.Domain.Services;
 using NUnit.Framework;
+using System;
 
-[TestFixture]
-public class VacationServiceTests
+namespace NET_EmployeeDatabase.Tests
 {
-    private VacationService _service;
-
-    [SetUp]
-    public void Setup()
+    [TestFixture]
+    public class VacationServiceTests
     {
-        _service = new VacationService();
-    }
+        private VacationService _service;
 
-    [Test]
-    public void employee_can_request_vacation()
-    {
-        var employee = new Employee
+        [SetUp]
+        public void Setup()
         {
-            VacationPackage = new VacationPackage { GrantedDays = 10 },
-            Vacations = new List<Vacation>
+            _service = new VacationService();
+        }
+
+        [Test]
+        public void employee_can_request_vacation()
+        {
+            var employee = new Employee
+            {
+                VacationPackage = new VacationPackage { GrantedDays = 10 },
+                Vacations = new List<Vacation>
             {
                 new Vacation { DateSince = DateTime.Today.AddDays(-10), DateUntil = DateTime.Today.AddDays(-5) }
             }
-        };
-        
-        Assert.IsTrue(_service.CanRequestVacation(employee));
-        
-    }
+            };
 
-    [Test]
-    public void employee_cant_request_vacation()
-    {
-        var employee = new Employee
+            Assert.IsTrue(_service.CanRequestVacation(employee));
+
+        }
+
+        [Test]
+        public void employee_cant_request_vacation()
         {
-            VacationPackage = new VacationPackage { GrantedDays = 5 },
-            Vacations = new List<Vacation>
+            var employee = new Employee
+            {
+                VacationPackage = new VacationPackage { GrantedDays = 5 },
+                Vacations = new List<Vacation>
             {
                 new Vacation { DateSince = DateTime.Today.AddDays(-10), DateUntil = DateTime.Today.AddDays(-5) },
                 new Vacation { DateSince = DateTime.Today.AddDays(-4), DateUntil = DateTime.Today.AddDays(-2) }
             }
-        };
+            };
 
-        Assert.IsFalse(_service.CanRequestVacation(employee));
-        
+            Assert.IsFalse(_service.CanRequestVacation(employee));
+
+        }
     }
 }

@@ -1,5 +1,9 @@
-public interface IVacationService
+using NET_EmployeeDatabase.Domain.Models;
+namespace NET_EmployeeDatabase.Domain.Interfaces
 {
-    int CountFreeDays(Employee employee);
-    bool CanRequestVacation(Employee employee);
+    public interface IVacationService
+    {
+        int CountFreeDays(Employee employee);
+        bool CanRequestVacation(Employee employee);
+    }
 }
